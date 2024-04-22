@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Digital menu-Sandar momo</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: #fdfcfb;
+            background-image: linear-gradient(45deg, #f3edd6 25%, transparent 25%, transparent 75%, #f3edd6 75%),
+                              linear-gradient(-45deg, #f3edd6 25%, transparent 25%, transparent 75%, #f3edd6 75%);
+            background-size: 20px 20px;
+            color: #4d4d4d;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .centered-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            animation: pulse 2s infinite ;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            color: #77382a;
+            margin-top: 10px;
+            font-size: 2em;
+            font-weight: bold;
+            animation: slideInRight 1s;
+        }
+
+        h2 {
+            color: #557a95;
+            font-size: 1.5em;
+            font-weight: bold;
+            animation: fadeIn 1.5s;
+        }
+
+        h3 {
+            color: #90aec0;
+            font-size: 1.2em;
+            animation: fadeIn 1.5s;
+        }
+
+        h4 {
+            color: #77382a;
+            font-size: 1.2em;
+            font-weight: bold;
+            animation: slideInLeft 1s;
+        }
+
+        .image-container img {
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s;
+        }
+
+        p {
+            font-size: 1em;
+            animation: fadeIn 1.5s;
+            color: #4d4d4d;
+        }
+
+        label {
+            color: #77382a;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #77382a;
+            margin: 0 5px;
+            outline: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            vertical-align: middle;
+        }
+
+        input[type="radio"]:checked {
+            background-color: #77382a;
+        }
+
+        /* Additional styles for a more attractive look */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        h1, h2, h3, h4 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="centered-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStWGVS8GWF_Vu3KnsLkJTfe8M8Qv2T0iYASo6Ctt_FSw&s" alt="Sanadar Momo Logo">
+        </div>
+        <h1>Welcome to Sandar Momo</h1><br>
+        <h2>Feeling hungry! Let's have momo.</h2>
+        <img src="https://i.pinimg.com/originals/73/ae/7f/73ae7f9f4681936d0a9ae3c693e3a92f.gif" alt="Momo" width="300">
+
+        <!--Jhol momo-->
+        <div class="image-container">
+            <h2>Stem Jhol momo</h2>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMQzLWau4BugReKN9eSSmfOObSBnOJvZNnN03DN=w768-h768-n-o-k-v1" alt="Jhol momo" width="350">
+            <p>Sandar Signature in spiced broth. Tender dumplings with aromatic spices, garlic, ginger, and soy, creating a flavorful delight.</p><br>
+            <h4>Craving for Jhol momo</h4>
+
+            <form>
+                <input type="radio" id="Chicken" name="Jhol momo" value="Chicken ">
+                <label for="Chicken">Chicken</label><br>
+                <input type="radio" id="Buff" name="Jhol momo" value="Buff">
+                <label for="Buff">Buff</label><br>
+                <input type="radio" id="Veg" name="Jhol Momo" value="Veg">
+                <label for="Veg">Veg</label>
+            </form><br>
+        </div>
+
+        <!--Steam momo-->
+        <div class="image-container">
+            <h2>Stem momo</h2>
+            <img src="https://www.thespruceeats.com/thmb/UnVh_-znw7ikMUciZIx5sNqBtTU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steamed-momos-wontons-1957616-hero-01-1c59e22bad0347daa8f0dfe12894bc3c.jpg" alt="Steam momo" width="350">
+            <p>Juicy dumplings filled with seasoned minced meat or vegetables, wrapped in dough, steamed; bursting with flavors.</p>
+            <h4>Steam momo with Signature Sauce?</h4>
+
+            <form>
+                <input type="radio" id="Chicken" name="Jhol momo" value="Chicken ">
+                <label for="Chicken">Chicken</label><br>
+                <input type="radio" id="Buff" name="Jhol momo" value="Buff">
+                <label for="Buff">Buff</label><br>
+                <input type="radio" id="Veg" name="Jhol Momo" value="Veg">
+                <label for="Veg">Veg</label>
+            </form> <br>
+        </div>
+
+        <!--Fried momo-->
+        <div class="image-container">
+            <h2>Fried Momo</h2>
+            <img src="https://honeyguideapps.com/sites/default/files/deep%20fried%2C%20crispy%20hot%20momos.jpg" alt="Fried Momo" width="350">
+            <p>Fried momo bursts with savory flavors from spiced minced meat, onions, garlic, and ginger, encased in crispy, golden wrappers.</p>
+            <h4>Something Crunchy? I guess Fried momo is best! </h4>
+
+            <form>
+                <input type="radio" id="Chicken" name="Jhol momo" value="Chicken ">
+                <label for="Chicken">Chicken</label><br>
+                <input type="radio" id="Buff" name="Jhol momo" value="Buff">
+                <label for="Buff">Buff</label><br>
+                <input type="radio" id="Veg" name="Jhol Momo" value="Veg">
+                <label for="Veg">Veg</label>
+            </form><br><br>
+        </div>
+
+        <!--Sausage-->
+        <div class="image-container">
+            <h2>Wanna Sausage??</h2>
+            <img src="https://img.freepik.com/premium-photo/fried-sausage-skewer-white-plate_1339-143261.jpg" alt="Sausage" width="350">
+            <p>Sausage bursts with savory spices, garlic, ginger, and local herbs, creating a bold, flavorful delight with every bite.</p><br>
+            <h4>Lets enjoy meaty Sausage</h4>
+
+            <form>
+                <input type="radio" id="Chicken" name="Sausage" value="Chicken ">
+                <label for="Chicken">Chicken</label><br>
+                <input type="radio" id="Buff" name="Sausage" value="Buff">
+                <label for="Buff">Buff</label><br>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
